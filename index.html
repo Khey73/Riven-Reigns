@@ -31,9 +31,10 @@
         .contenedor-general{
             display: grid;
             grid-template-columns: repeat(auto-fill, 340px);
-            gap: 30px;
+            gap: 60px;
             justify-content: center;
             width: 100%;
+            margin-top: 40px;
             
         }
         .contenedor-producto{
@@ -141,10 +142,16 @@
         }
 
         /* header */
-        header .imagenFondo {
+        .contenedor-imagen{
             width: 100%;
             height: 700px;
+            overflow: hidden;
+        }
+        header .imagenFondo {
+            width: 100%;
+            height: 200%;
             object-fit: cover;
+            
             
         }
         .imagen-transparencia{
@@ -175,7 +182,10 @@
 
         header .texto-principal span{
             color: yellow;
+           
         }
+
+        
     </style>
 </head>
 <body>
@@ -198,12 +208,17 @@
     </nav>
 
     <header>
-        <img class="imagenFondo" src="img/RivenChampionship.jpg" alt="Riven">
-
-        <div class="texto-principal">
-            <h1>SERVICIOS BOOSTING </h1>
-            <p>Rapido, seguro y barato por un <span>CHALLENGER</span></p>
+        <div class="contenedor-imagen">
+            <img class="imagenFondo" src="img/RivenChampionship.jpg" alt="Riven">
         </div>
+        
+       
+            <div class="texto-principal">
+                <h1>SERVICIOS BOOSTING </h1>
+                <p>Rapido, seguro y barato por un <span>CHALLENGER</span></p>
+            </div>
+      
+        
     </header>
 
 
